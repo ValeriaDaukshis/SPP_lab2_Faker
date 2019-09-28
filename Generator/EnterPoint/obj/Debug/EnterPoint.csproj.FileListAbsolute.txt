@@ -1,0 +1,9 @@
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\bin\Debug\EnterPoint.exe
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\bin\Debug\EnterPoint.pdb
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\bin\Debug\Generator.dll
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\bin\Debug\Generator.pdb
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.csprojAssemblyReference.cache
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.csproj.CoreCompileInputs.cache
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.csproj.CopyComplete
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.exe
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.pdb

@@ -1,0 +1,6 @@
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\bin\Debug\Generator.dll
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\bin\Debug\Generator.pdb
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\obj\Debug\Generator.csprojAssemblyReference.cache
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\obj\Debug\Generator.csproj.CoreCompileInputs.cache
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\obj\Debug\Generator.dll
+C:\Users\dauks\source\repos\SPP labs\Lab2_faker\Generator\Generator\obj\Debug\Generator.pdb

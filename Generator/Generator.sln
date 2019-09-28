@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterPoint", "EnterPoint\EnterPoint.csproj", "{05F40720-12E0-4560-A0FD-A8891CD5F716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
