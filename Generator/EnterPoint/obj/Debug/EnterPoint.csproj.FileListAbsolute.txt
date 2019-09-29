@@ -16,3 +16,9 @@ C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\obj\Debug\EnterP
 C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.csproj.CopyComplete
 C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.exe
 C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\obj\Debug\EnterPoint.pdb
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\Plugin.dll
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\DateTimeGenerator.dll
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\FloatGenerator.dll
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\Plugin.pdb
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\DateTimeGenerator.pdb
+C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\EnterPoint\bin\Debug\FloatGenerator.pdb

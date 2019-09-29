@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace Generator.Plugins
+namespace Plugin
 {
     public class LoadGenerator
     {
@@ -29,8 +29,7 @@ namespace Generator.Plugins
                     IGenerator plugin = (IGenerator)Activator.CreateInstance(type);
                     plugin.GenerateRandomValue();
                 }
-            }
-            
+            } 
         }
     }
 }

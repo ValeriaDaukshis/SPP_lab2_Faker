@@ -1,5 +1,5 @@
 ﻿using System;
-using Generator.Plugins;
+using Plugin;
 
 namespace Generator.Generators
 {

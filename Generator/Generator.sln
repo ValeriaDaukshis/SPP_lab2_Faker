@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeGenerator", "DateTi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatGenerator", "FloatGenerator\FloatGenerator.csproj", "{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin", "Plugin\Plugin.csproj", "{76F09816-EF5E-4B14-8A19-D08123E0383A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F09816-EF5E-4B14-8A19-D08123E0383A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F09816-EF5E-4B14-8A19-D08123E0383A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F09816-EF5E-4B14-8A19-D08123E0383A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F09816-EF5E-4B14-8A19-D08123E0383A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

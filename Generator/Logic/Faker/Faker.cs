@@ -1,9 +1,8 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Reflection;
 using Generator.Generators;
-using Generator.Plugins;
+using Plugin;
 
 namespace Generator.Faker
 {
@@ -85,13 +84,22 @@ namespace Generator.Faker
                 return new Int32Generator();
             if(type == typeof(double))
                 return new DoubleGenerator();
-            if (type == typeof(DateTime))
-                return (IGenerator)_dateTime;
+            if (type == typeof(string))
+                return new StringGenerator();
+            if(type == typeof(DateTime))
+            {
+                global::DateTimeGenerator.DateTimeGenerator dateTimeGenerator = new global::DateTimeGenerator.DateTimeGenerator();
+                return dateTimeGenerator;
+            }
+            if(type == typeof(float))
+            {
+                global::FloatGenerator.FloatGenerator floatGenerator = new global::FloatGenerator.FloatGenerator();
+                return floatGenerator;
+            }
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
                 return null;
             
-            throw new Exception("No generator for ");
-
+            throw new Exception("No generator for "); 
         }
     }
 }

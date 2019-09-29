@@ -42,13 +42,9 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-        <Project>{5022a57a-857f-42c1-b1e6-9ee98265f498}</Project>
-        <Name>Interfaces</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Logic\Logic.csproj">
-        <Project>{fe3f120b-1c8a-4cb7-b75a-84bf69600fbd}</Project>
-        <Name>Logic</Name>
+      <ProjectReference Include="..\Plugin\Plugin.csproj">
+        <Project>{7c45880c-9b17-4f03-8d51-ca97587fe706}</Project>
+        <Name>Plugin</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

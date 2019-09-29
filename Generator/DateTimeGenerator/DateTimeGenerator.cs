@@ -1,10 +1,9 @@
 ﻿using System;
-using Generator.Generators;
-using Generator.Plugins;
+using Plugin;
 
 namespace DateTimeGenerator
 {
-    public class DateTimeGenerator 
+    public class DateTimeGenerator : IGenerator
     {
         public object GenerateRandomValue()
         {

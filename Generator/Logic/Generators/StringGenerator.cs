@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using Generator.Plugins;
+using Plugin;
 
 namespace Generator.Generators
 {
@@ -9,7 +9,7 @@ namespace Generator.Generators
         public object GenerateRandomValue()
         {
             Random random = new Random();
-            int length = random.Next(1, 20);
+            int length = random.Next(5, 20);
             string symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
             StringBuilder result = new StringBuilder(length);
             for (int i = 0; i < length; i++)
