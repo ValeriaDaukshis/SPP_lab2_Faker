@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad48cdc8-d91a-4840-a20d-4b60670dc6fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Logic/Generators/GenericGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Faker/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Logic/Faker/Faker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Plugins/LoadGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/41/2d5b5d18/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Faker/IFaker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Generators/GenericGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -59,10 +67,11 @@
         <option value="$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.cs" />
         <option value="$PROJECT_DIR$/FloatGenerator/FloatGenerator.cs" />
         <option value="$PROJECT_DIR$/EnterPoint/Program.cs" />
-        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" />
         <option value="$PROJECT_DIR$/Logic/Plugins/LoadGenerator.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/GenericGenerator.cs" />
         <option value="$PROJECT_DIR$/Logic/Faker/Faker.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" />
       </list>
     </option>
   </component>
@@ -71,6 +80,7 @@
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -118,7 +128,8 @@
       <updated>1569594517881</updated>
       <workItem from="1569594521837" duration="15975000" />
       <workItem from="1569703014195" duration="12194000" />
-      <workItem from="1569755162546" duration="3421000" />
+      <workItem from="1569755162546" duration="4070000" />
+      <workItem from="1569761242137" duration="4923000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1569624357687</created>
@@ -141,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569757169548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="GenerateByConstructor">
+      <created>1569758602456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569758602456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +184,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="generators" />
     <MESSAGE value="plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="plugins" />
+    <MESSAGE value="GenerateByConstructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="GenerateByConstructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -176,17 +195,30 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" initialLine="29">
+          <url>file://$PROJECT_DIR$/Logic/Faker/Faker.cs</url>
+          <line>76</line>
+          <properties documentPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" initialLine="76">
             <startOffsets>
-              <option value="634" />
+              <option value="2518" />
             </startOffsets>
             <endOffsets>
-              <option value="724" />
+              <option value="2592" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs</url>
+          <line>14</line>
+          <properties documentPath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" initialLine="18">
+            <startOffsets>
+              <option value="376" />
+            </startOffsets>
+            <endOffsets>
+              <option value="414" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

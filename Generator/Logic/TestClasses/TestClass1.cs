@@ -5,7 +5,7 @@ namespace Generator.TestClasses
 {
     public class TestClass1
     {
-        //public IList<int> List;
+        public IList<int> List;
         public DateTime date;
         public string str;
         public int number;

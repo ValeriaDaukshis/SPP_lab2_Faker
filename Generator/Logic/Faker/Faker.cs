@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Reflection;
 using Generator.Generators;
@@ -38,7 +39,7 @@ namespace Generator.Faker
             _floatGenerator.PluginLoad(); 
         }
 
-        private static ConstructorInfo GetConstructorsInfo(Type type, ref int maxValues)
+        private ConstructorInfo GetConstructorsInfo(Type type, ref int maxValues)
         {
             ConstructorInfo[] constructors = type.GetConstructors();
             ConstructorInfo constructor = null;
@@ -61,8 +62,7 @@ namespace Generator.Faker
             for (int i=0; i < info.Length; i++)
             {
                 var thisType = info[i].ParameterType;
-                values[i] = generators.Generator(thisType);
-                
+                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType)); 
             }
             constructor.Invoke(values);
         }
@@ -74,9 +74,24 @@ namespace Generator.Faker
             foreach (FieldInfo info in fields)
             {
                 var thisType = info.FieldType;
-                object value = generators.Generator(thisType);
+                object value = generators.Generator(thisType, GetTypeGenerator(thisType));
                 info.SetValue(obj, value); 
             }
+        }
+
+        public IGenerator GetTypeGenerator(Type type)
+        {
+            if(type == typeof(int))
+                return new Int32Generator();
+            if(type == typeof(double))
+                return new DoubleGenerator();
+            if (type == typeof(DateTime))
+                return (IGenerator)_dateTime;
+            if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
+                return null;
+            
+            throw new Exception("No generator for ");
+
         }
     }
 }
