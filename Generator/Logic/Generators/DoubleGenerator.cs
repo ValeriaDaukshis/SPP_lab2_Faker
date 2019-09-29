@@ -1,4 +1,5 @@
 ﻿using System;
+using Generator.Plugins;
 
 namespace Generator.Generators
 {

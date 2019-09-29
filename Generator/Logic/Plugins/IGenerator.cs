@@ -1,4 +1,4 @@
-﻿namespace Generator.Generators
+﻿namespace Generator.Plugins
 {
     public interface IGenerator
     {

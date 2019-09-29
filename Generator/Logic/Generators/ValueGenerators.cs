@@ -1,24 +1,26 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Reflection; 
+using Generator.Plugins;
 
 namespace Generator.Generators
 {
-    public static class ValueGenerators
+    public class ValueGenerators
     {
-        public static object Generator(Type type)
+        
+        public object Generator(Type type)
         {
             object a = 0;
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
             {
                 object list = Activator.CreateInstance(typeof(List<>).MakeGenericType(type)); 
                
-                return ((IList)list).Add(ValueGenerators.Generator(type));
+                //return ((IList)list).Add(ValueGenerators.Generator(type));
                 
             }
             else if (type == typeof(DateTime))
             {
+                DateTimeGenerator.DateTimeGenerator f = new global::DateTimeGenerator.DateTimeGenerator();
+                return f.GenerateRandomValue();
             }
             else if (type == typeof(double))
             {

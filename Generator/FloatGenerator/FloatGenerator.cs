@@ -1,6 +1,7 @@
 ﻿using System;
+using Generator.Plugins;
 
-namespace Generator.Generators
+namespace FloatGenerator 
 {
     public class FloatGenerator : IGenerator
     {

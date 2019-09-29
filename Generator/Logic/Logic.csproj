@@ -40,15 +40,24 @@
     <ItemGroup>
         <Compile Include="Faker\Faker.cs" />
         <Compile Include="Faker\IFaker.cs" />
-        <Compile Include="Generators\DateTimeGenerator.cs" />
         <Compile Include="Generators\DoubleGenerator.cs" />
-        <Compile Include="Generators\IGenerator.cs" />
         <Compile Include="Generators\Int32Generator.cs" />
         <Compile Include="Generators\StringGenerator.cs" />
         <Compile Include="Generators\ValueGenerators.cs" />
-        <Compile Include="Generators\FloatGenerator.cs" />
+        <Compile Include="Plugins\IGenerator.cs" />
+        <Compile Include="Plugins\LoadGenerator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="TestClasses\TestClass1.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\DateTimeGenerator\DateTimeGenerator.csproj">
+        <Project>{738f2634-2a4d-4c7b-bada-1b85c807078c}</Project>
+        <Name>DateTimeGenerator</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+        <Project>{5022a57a-857f-42c1-b1e6-9ee98265f498}</Project>
+        <Name>Interfaces</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

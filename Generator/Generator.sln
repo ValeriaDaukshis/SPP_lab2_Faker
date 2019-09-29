@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterPoint", "EnterPoint\EnterPoint.csproj", "{05F40720-12E0-4560-A0FD-A8891CD5F716}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeGenerator", "DateTimeGenerator\DateTimeGenerator.csproj", "{738F2634-2A4D-4C7B-BADA-1B85C807078C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatGenerator", "FloatGenerator\FloatGenerator.csproj", "{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F40720-12E0-4560-A0FD-A8891CD5F716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738F2634-2A4D-4C7B-BADA-1B85C807078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738F2634-2A4D-4C7B-BADA-1B85C807078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738F2634-2A4D-4C7B-BADA-1B85C807078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738F2634-2A4D-4C7B-BADA-1B85C807078C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DC3AE4-88E8-45C0-A72B-E6CDAC76C7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
