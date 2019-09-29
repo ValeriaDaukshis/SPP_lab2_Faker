@@ -8,7 +8,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Generator</RootNamespace>
-        <AssemblyName>Generator</AssemblyName>
+        <AssemblyName>Logic</AssemblyName>
         <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -38,11 +38,17 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Faker.cs" />
-        <Compile Include="IFaker.cs" />
+        <Compile Include="Faker\Faker.cs" />
+        <Compile Include="Faker\IFaker.cs" />
+        <Compile Include="Generators\DateTimeGenerator.cs" />
+        <Compile Include="Generators\DoubleGenerator.cs" />
+        <Compile Include="Generators\IGenerator.cs" />
+        <Compile Include="Generators\Int32Generator.cs" />
+        <Compile Include="Generators\StringGenerator.cs" />
+        <Compile Include="Generators\ValueGenerators.cs" />
+        <Compile Include="Generators\FloatGenerator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="TestClass1.cs" />
-        <Compile Include="ValueGenerators.cs" />
+        <Compile Include="TestClasses\TestClass1.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -42,9 +42,9 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Generator\Generator.csproj">
+      <ProjectReference Include="..\Logic\Logic.csproj">
         <Project>{fe3f120b-1c8a-4cb7-b75a-84bf69600fbd}</Project>
-        <Name>Generator</Name>
+        <Name>Logic</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

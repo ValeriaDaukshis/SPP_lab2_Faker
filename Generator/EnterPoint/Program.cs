@@ -1,5 +1,7 @@
 ﻿using System;
 using Generator;
+using Generator.Faker;
+using Generator.TestClasses;
 
 namespace EnterPoint
 {
@@ -10,7 +12,7 @@ namespace EnterPoint
             Faker faker = new Faker();
             TestClass1 obj = faker.Create<TestClass1>();
             Console.WriteLine(obj.str);
-            Console.WriteLine(obj.number);
+            //Console.WriteLine(obj.number);
             Console.WriteLine(obj.doubleNumber);
             Console.WriteLine(obj.floatNumber);
             Console.WriteLine(obj.date);

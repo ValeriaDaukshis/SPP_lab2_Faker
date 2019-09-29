@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{FE3F120B-1C8A-4CB7-B75A-84BF69600FBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterPoint", "EnterPoint\EnterPoint.csproj", "{05F40720-12E0-4560-A0FD-A8891CD5F716}"
 EndProject
