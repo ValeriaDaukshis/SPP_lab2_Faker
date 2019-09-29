@@ -9,29 +9,33 @@ namespace Generator.Faker
     public class Faker : IFaker
     {
         private object _obj;
-        private LoadGenerator dateTime;
-        private LoadGenerator floatGenerator;
+        private LoadGenerator _dateTime;
+        private LoadGenerator _floatGenerator;
         public T Create<T>()
         {
             LoadPlugins();
             Type type = typeof(T);
             int maxValues = -1;
             ConstructorInfo constructor = GetConstructorsInfo(type, ref maxValues);
+            _obj = Activator.CreateInstance(type);
             if (maxValues == 0)
             {
-                _obj = Activator.CreateInstance(type);
                 GenerateByFields(type, _obj);
+            }
+            else
+            {
+                GenerateByConstructor(constructor, _obj);
             }
             return (T)_obj;
         }
 
         private void LoadPlugins()
         {
-            dateTime = new LoadGenerator("DateTimeGenerator.dll");
-            dateTime.PluginLoad();
+            _dateTime = new LoadGenerator("DateTimeGenerator.dll");
+            _dateTime.PluginLoad();
             
-            floatGenerator = new LoadGenerator("FloatGenerator.dll");
-            floatGenerator.PluginLoad(); 
+            _floatGenerator = new LoadGenerator("FloatGenerator.dll");
+            _floatGenerator.PluginLoad(); 
         }
 
         private static ConstructorInfo GetConstructorsInfo(Type type, ref int maxValues)
@@ -49,9 +53,18 @@ namespace Generator.Faker
             return constructor;
         }
 
-        private static void GenerateByConstructor(ConstructorInfo constructor)
+        private void GenerateByConstructor(ConstructorInfo constructor, object obj)
         {
-            
+            ParameterInfo[] info = constructor.GetParameters();
+            ValueGenerators generators = new ValueGenerators();
+            object[] values = new object[info.Length];
+            for (int i=0; i < info.Length; i++)
+            {
+                var thisType = info[i].ParameterType;
+                values[i] = generators.Generator(thisType);
+                
+            }
+            constructor.Invoke(values);
         }
 
         private void GenerateByFields(Type type, object obj)

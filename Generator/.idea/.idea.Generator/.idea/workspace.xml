@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad48cdc8-d91a-4840-a20d-4b60670dc6fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Logic/Plugins/LoadGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnterPoint/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Generator.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Faker/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/DateTimeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/FloatGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FloatGenerator/FloatGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/IGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Plugins/IGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +72,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,7 +118,7 @@
       <updated>1569594517881</updated>
       <workItem from="1569594521837" duration="15975000" />
       <workItem from="1569703014195" duration="12194000" />
-      <workItem from="1569755162546" duration="1852000" />
+      <workItem from="1569755162546" duration="3421000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1569624357687</created>
@@ -147,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569750423252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="plugins">
+      <created>1569757169548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569757169548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="generators" />
-    <option name="LAST_COMMIT_MESSAGE" value="generators" />
+    <MESSAGE value="plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="plugins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -192,45 +187,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Logic/Faker/Faker.cs</url>
-          <line>57</line>
-          <properties documentPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" initialLine="56">
-            <startOffsets>
-              <option value="1808" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1838" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Logic/Faker/Faker.cs</url>
-          <line>53</line>
-          <properties documentPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" initialLine="52">
-            <startOffsets>
-              <option value="1628" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1666" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Logic/Faker/Faker.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" initialLine="15">
-            <startOffsets>
-              <option value="359" />
-            </startOffsets>
-            <endOffsets>
-              <option value="373" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
