@@ -10,6 +10,8 @@ namespace Generator.TestClasses
         public DateTime date;
         public string str;
         public int number;
-        public double doubleNumber; 
+        public double doubleNumber;
+        public char charValue;
+        public byte byteNumber;
     }
 }

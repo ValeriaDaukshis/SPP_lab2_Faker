@@ -24,7 +24,7 @@ namespace Generator.Faker
             }
             else
             {
-                GenerateByConstructor(constructor, _obj);
+                GenerateByConstructor(constructor, ref _obj);
             }
             return (T)_obj;
         }
@@ -53,7 +53,7 @@ namespace Generator.Faker
             return constructor;
         }
 
-        private void GenerateByConstructor(ConstructorInfo constructor, object obj)
+        private void GenerateByConstructor(ConstructorInfo constructor, ref object obj)
         {
             ParameterInfo[] info = constructor.GetParameters();
             ValueGenerators generators = new ValueGenerators();
@@ -63,7 +63,7 @@ namespace Generator.Faker
                 var thisType = info[i].ParameterType;
                 values[i] = generators.Generator(thisType, GetTypeGenerator(thisType)); 
             }
-            constructor.Invoke(values);
+            obj = constructor.Invoke(values);
         }
 
         private void GenerateByFields(Type type, object obj)
@@ -99,7 +99,7 @@ namespace Generator.Faker
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
                 return null;
             
-            throw new Exception("No generator for "); 
+            return null;
         }
     }
 }

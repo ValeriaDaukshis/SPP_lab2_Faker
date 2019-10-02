@@ -7,7 +7,6 @@ namespace Generator.Generators
 {
     public class ValueGenerators
     {
-        
         public object Generator(Type type, IGenerator generator)
         {
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
@@ -17,10 +16,8 @@ namespace Generator.Generators
 
                 return Generics(list, b, 2);
             }
-            else
-            {
-                return generator.GenerateRandomValue();
-            } 
+
+            return generator?.GenerateRandomValue();
         }
 
         private object Generics(object list,Type b, int count)

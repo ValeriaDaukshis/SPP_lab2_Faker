@@ -40,6 +40,7 @@
     <ItemGroup>
         <Compile Include="Faker\Faker.cs" />
         <Compile Include="Faker\IFaker.cs" />
+        <Compile Include="Generators\DefaultGenerator.cs" />
         <Compile Include="Generators\DoubleGenerator.cs" />
         <Compile Include="Generators\Int32Generator.cs" />
         <Compile Include="Generators\StringGenerator.cs" />

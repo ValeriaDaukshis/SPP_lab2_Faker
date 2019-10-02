@@ -8,7 +8,7 @@ namespace Generator.Generators
         public object GenerateRandomValue()
         {
             Random rand = new Random();
-            return (Double)rand.Next(1, 1000);
+            return (double)rand.Next(Int32.MinValue, Int32.MaxValue);
         }
     }
 }

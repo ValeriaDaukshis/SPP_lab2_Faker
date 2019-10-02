@@ -17,6 +17,7 @@ namespace Plugin
         public void PluginLoad()
         {
             string aboutLibName = @"C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\" + _dllLibrary;
+           // string aboutLibName =_dllLibrary;
             if (!File.Exists(aboutLibName))
             {
                 throw new IOException("No plugin file");
