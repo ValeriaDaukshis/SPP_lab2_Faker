@@ -11,6 +11,13 @@ namespace Generator.Faker
         private object _obj;
         private LoadGenerator _dateTime;
         private LoadGenerator _floatGenerator;
+        private IDictionary _dictionary;
+
+        public Faker(IDictionary dictionary)
+        {
+            _dictionary = dictionary;
+        }
+        
         public T Create<T>()
         {
             LoadPlugins();
@@ -80,26 +87,36 @@ namespace Generator.Faker
 
         public IGenerator GetTypeGenerator(Type type)
         {
-            if(type == typeof(int))
-                return new Int32Generator();
-            if(type == typeof(double))
-                return new DoubleGenerator();
-            if (type == typeof(string))
-                return new StringGenerator();
-            if(type == typeof(DateTime))
+            try
             {
-                global::DateTimeGenerator.DateTimeGenerator dateTimeGenerator = new global::DateTimeGenerator.DateTimeGenerator();
-                return dateTimeGenerator;
+                Dictionary<Type, IGenerator> dictionary = _dictionary.GeneratorDictionary();
+                IGenerator generator = dictionary[type];
+                return generator;
             }
-            if(type == typeof(float))
+            catch (KeyNotFoundException)
             {
-                global::FloatGenerator.FloatGenerator floatGenerator = new global::FloatGenerator.FloatGenerator();
-                return floatGenerator;
-            }
-            if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
                 return null;
-            
-            return null;
+            }
+//            if(type == typeof(int))
+//                return new Int32Generator();
+//            if(type == typeof(double))
+//                return new DoubleGenerator();
+//            if (type == typeof(string))
+//                return new StringGenerator();
+//            if(type == typeof(DateTime))
+//            {
+//                global::DateTimeGenerator.DateTimeGenerator dateTimeGenerator = new global::DateTimeGenerator.DateTimeGenerator();
+//                return dateTimeGenerator;
+//            }
+//            if(type == typeof(float))
+//            {
+//                global::FloatGenerator.FloatGenerator floatGenerator = new global::FloatGenerator.FloatGenerator();
+//                return floatGenerator;
+//            }
+//            if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
+//                return null;
+//            
+//            return null;
         }
     }
 }

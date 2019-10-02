@@ -14,7 +14,7 @@ namespace Generator.Generators
                 var b = type.GetGenericArguments()[0];
                 object list = Activator.CreateInstance(typeof(List<>).MakeGenericType(b));
 
-                return Generics(list, b, 2);
+                return Generics(list, b, new Random().Next(2, 10));
             }
 
             return generator?.GenerateRandomValue();
@@ -24,7 +24,7 @@ namespace Generator.Generators
         {
             if (count == 0)
                 return list;
-            ((IList)list).Add(new ValueGenerators().Generator(b, new Faker.Faker().GetTypeGenerator(b)));
+            ((IList)list).Add(new ValueGenerators().Generator(b, new Faker.Faker(new GeneratorsDictionary()).GetTypeGenerator(b)));
             return Generics(list, b, --count);
         }
     }

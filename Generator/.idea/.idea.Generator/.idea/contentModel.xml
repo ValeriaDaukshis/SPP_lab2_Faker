@@ -51,6 +51,8 @@
         <e p="Generators" t="Include">
           <e p="DefaultGenerator.cs" t="Include" />
           <e p="DoubleGenerator.cs" t="Include" />
+          <e p="GeneratorsDictionary.cs" t="Include" />
+          <e p="IDictionary.cs" t="Include" />
           <e p="Int32Generator.cs" t="Include" />
           <e p="StringGenerator.cs" t="Include" />
           <e p="ValueGenerators.cs" t="Include" />

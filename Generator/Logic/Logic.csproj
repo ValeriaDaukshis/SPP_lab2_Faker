@@ -42,6 +42,8 @@
         <Compile Include="Faker\IFaker.cs" />
         <Compile Include="Generators\DefaultGenerator.cs" />
         <Compile Include="Generators\DoubleGenerator.cs" />
+        <Compile Include="Generators\GeneratorsDictionary.cs" />
+        <Compile Include="Generators\IDictionary.cs" />
         <Compile Include="Generators\Int32Generator.cs" />
         <Compile Include="Generators\StringGenerator.cs" />
         <Compile Include="Generators\ValueGenerators.cs" />
