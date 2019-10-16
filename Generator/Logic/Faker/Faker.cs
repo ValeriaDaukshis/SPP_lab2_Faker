@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using Generator.Generators;
 using Plugin;
@@ -9,44 +10,62 @@ namespace Generator.Faker
     public class Faker : IFaker
     {
         private object _obj;
-        private LoadGenerator _dateTime;
-        private LoadGenerator _floatGenerator;
-        private IDictionary _dictionary;
+        private readonly DictionaryOfGenerators _generator;
+        HashSet<object> members = new HashSet<object>();
 
-        public Faker(IDictionary dictionary)
+        public Faker(DictionaryOfGenerators generator)
         {
-            _dictionary = dictionary;
+            _generator = generator;
         }
-        
-        public T Create<T>()
+        public T Create<T>() 
         {
             LoadPlugins();
             Type type = typeof(T);
-            int maxValues = -1;
-            ConstructorInfo constructor = GetConstructorsInfo(type, ref maxValues);
-            _obj = Activator.CreateInstance(type);
-            if (maxValues == 0)
+            ConstructorInfo constructor = GetConstructorsInfo(type);
+            if (constructor == null)
             {
+                _obj = null;
+                return (T)_obj;
+            }
+            if (constructor.GetParameters().Length == 0)
+            {
+                _obj = Activator.CreateInstance(type);
                 GenerateByFields(type, _obj);
             }
             else
-            {
-                GenerateByConstructor(constructor, ref _obj);
-            }
+                _obj = GenerateByConstructor(constructor);
+            
             return (T)_obj;
         }
 
         private void LoadPlugins()
         {
-            _dateTime = new LoadGenerator("DateTimeGenerator.dll");
-            _dateTime.PluginLoad();
+            string pluginPath = @"C:\Users\dauks\source\repos\Spp_Lab2_faker\Generator\Plugins\";
+            DirectoryInfo pluginDirectory = new DirectoryInfo(pluginPath);
+            if (!pluginDirectory.Exists)
+                throw new IOException();
             
-            _floatGenerator = new LoadGenerator("FloatGenerator.dll");
-            _floatGenerator.PluginLoad(); 
+            var pluginFiles = Directory.GetFiles(pluginPath, "*.dll");
+            foreach (var file in pluginFiles)
+            {
+                Assembly assembly = Assembly.LoadFrom(file);
+                foreach (Type type in assembly.GetExportedTypes())
+                {
+                    if (type.IsClass && typeof(IGenerator).IsAssignableFrom(type))
+                    {
+                        var plugin = assembly.CreateInstance(type.FullName ?? throw new Exception("Error is plugin loading")) as IGenerator;
+                        FieldInfo fieldType = type.GetFields(BindingFlags.NonPublic | 
+                                                       BindingFlags.Instance)[0];
+//                        plugin.SupportedType
+                        _generator.dictionary.Add(fieldType.FieldType, plugin);
+                    }
+                }
+            }
         }
 
-        private ConstructorInfo GetConstructorsInfo(Type type, ref int maxValues)
+        private ConstructorInfo GetConstructorsInfo(Type type)
         {
+            int maxValues = -1;
             ConstructorInfo[] constructors = type.GetConstructors();
             ConstructorInfo constructor = null;
             foreach (ConstructorInfo c in constructors)
@@ -60,7 +79,7 @@ namespace Generator.Faker
             return constructor;
         }
 
-        private void GenerateByConstructor(ConstructorInfo constructor, ref object obj)
+        private object GenerateByConstructor(ConstructorInfo constructor)
         {
             ParameterInfo[] info = constructor.GetParameters();
             ValueGenerators generators = new ValueGenerators();
@@ -68,9 +87,9 @@ namespace Generator.Faker
             for (int i=0; i < info.Length; i++)
             {
                 var thisType = info[i].ParameterType;
-                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType)); 
+                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType, info[i].Name)); 
             }
-            obj = constructor.Invoke(values);
+            return constructor.Invoke(values);
         }
 
         private void GenerateByFields(Type type, object obj)
@@ -80,43 +99,23 @@ namespace Generator.Faker
             foreach (FieldInfo info in fields)
             {
                 var thisType = info.FieldType;
-                object value = generators.Generator(thisType, GetTypeGenerator(thisType));
+                object value = generators.Generator(thisType, GetTypeGenerator(thisType, info.Name));
                 info.SetValue(obj, value); 
             }
         }
 
-        public IGenerator GetTypeGenerator(Type type)
+        public IGenerator GetTypeGenerator(Type type, string fieldName)
         {
-            try
+            Dictionary<Type, Tuple<string, IGenerator>> configDictionary = _generator.configDictionary;
+            if (configDictionary != null && configDictionary.ContainsKey(type) )
             {
-                Dictionary<Type, IGenerator> dictionary = _dictionary.GeneratorDictionary();
-                IGenerator generator = dictionary[type];
-                return generator;
+                if(fieldName == configDictionary[type].Item1)
+                    return configDictionary[type].Item2;
             }
-            catch (KeyNotFoundException)
-            {
-                return null;
-            }
-//            if(type == typeof(int))
-//                return new Int32Generator();
-//            if(type == typeof(double))
-//                return new DoubleGenerator();
-//            if (type == typeof(string))
-//                return new StringGenerator();
-//            if(type == typeof(DateTime))
-//            {
-//                global::DateTimeGenerator.DateTimeGenerator dateTimeGenerator = new global::DateTimeGenerator.DateTimeGenerator();
-//                return dateTimeGenerator;
-//            }
-//            if(type == typeof(float))
-//            {
-//                global::FloatGenerator.FloatGenerator floatGenerator = new global::FloatGenerator.FloatGenerator();
-//                return floatGenerator;
-//            }
-//            if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
-//                return null;
-//            
-//            return null;
+            Dictionary<Type, IGenerator> dictionary = _generator.dictionary;
+            if (dictionary.ContainsKey(type))
+                return dictionary[type];
+            return null;
         }
     }
 }

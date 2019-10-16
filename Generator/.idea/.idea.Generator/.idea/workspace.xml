@@ -2,19 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad48cdc8-d91a-4840-a20d-4b60670dc6fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Logic/Generators/GeneratorsDictionary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/Generators/IDictionary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator.Tests/Generator.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator.Tests/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator.Tests/Tests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator.Tests/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Faker/FakerConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Generators/DictionaryOfGenerators.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Generators/IDictionaryGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Generators/StringConfigGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass4.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass5.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugin/Plugin.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plugin/Properties/AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTimeGenerator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTimeGenerator/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnterPoint/EnterPoint.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/EnterPoint.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/bin/Debug/EnterPoint.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnterPoint/main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnterPoint/main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EnterPoint/obj/Debug/EnterPoint.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FloatGenerator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FloatGenerator/FloatGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FloatGenerator/FloatGenerator.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FloatGenerator/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Generator.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Faker/Faker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Faker/Faker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/DefaultGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/GeneratorsDictionary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/IDictionary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Logic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/TestClasses/TestClass2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/TestClasses/TestClass2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugin/IGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin/IGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugin/LoadGenerator.cs" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,45 +59,51 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/EnterPoint/main.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EnterPoint/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/74/da60898f/RuntimeMethodHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ECD3F11-D027-42CB-A32F-58723999A994/13/49dc5cf3/RuntimeParameterInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugin/IGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/e7/ca5e41bd/RuntimeConstructorInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FloatGenerator/FloatGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/0a/6850b0e2/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EnterPoint/ConsoleWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Generator.Tests/Tests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Faker/FakerConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/1e/2583fbd5/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Faker/Faker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ECD3F11-D027-42CB-A32F-58723999A994/d6/f5183f95/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Plugin/LoadGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/41/2d5b5d18/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Faker/IFaker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ECD3F11-D027-42CB-A32F-58723999A994/5a/3fffa91f/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass5.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/TestClasses/TestClass4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06452B71-9576-486B-AAA3-34B141B6537A/40/00ff444d/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/80/5764ba98/WorkItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Generators/IDictionaryGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/92/583b0f0d/ParallelWorkItemDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DateTimeGenerator/DateTimeGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/79/7c12f9cb/CompositeWorkItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DateTimeGenerator/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FloatGenerator/FloatGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/43/92382584/TestWorker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Generators/StringConfigGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC59C34C-5AB9-4095-B076-4B853EBDB47F/b3/d173773c/RtFieldInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Generators/GeneratorsDictionary.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Generators/IDictionary.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Generators/DefaultGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Generators/DictionaryOfGenerators.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/497E7C03-5433-4AE6-B257-9B219192BCF0/ce/398ade85/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Generator/IFaker.cs" />
-        <option value="$PROJECT_DIR$/Generator/ValueGenerators.cs" />
         <option value="$PROJECT_DIR$/Generator/TestClass1.cs" />
         <option value="$PROJECT_DIR$/Generator/Faker.cs" />
         <option value="$PROJECT_DIR$/TestClasses/Class1.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/IGenerator.cs" />
         <option value="$PROJECT_DIR$/Logic/Generators/DateTimeGenerator.cs" />
         <option value="$PROJECT_DIR$/Logic/Generators/ValueTypeGenerator.cs" />
         <option value="$PROJECT_DIR$/Logic/Generators/FloatGenerator.cs" />
@@ -79,26 +118,40 @@
         <option value="$PROJECT_DIR$/Interface/Class1.cs" />
         <option value="$PROJECT_DIR$/Interface/IGenerator.cs" />
         <option value="$PROJECT_DIR$/FloatGenerator/FloatGenerator.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" />
         <option value="$PROJECT_DIR$/DateTimeGenerator/DateTimeGenerator.cs" />
-        <option value="$PROJECT_DIR$/Plugin/Class1.cs" />
-        <option value="$PROJECT_DIR$/Plugin/IGenerator.cs" />
-        <option value="$PROJECT_DIR$/EnterPoint/Program.cs" />
-        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass2.cs" />
         <option value="$PROJECT_DIR$/EnterPoint/GetFields.cs" />
         <option value="$PROJECT_DIR$/EnterPoint/WriteToConsole.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/DefaultGenerator.cs" />
         <option value="$PROJECT_DIR$/EnterPoint/ConsoleWriter.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" />
-        <option value="$PROJECT_DIR$/Plugin/LoadGenerator.cs" />
-        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" />
         <option value="$PROJECT_DIR$/Logic/Generators/IDictionary.cs" />
-        <option value="$PROJECT_DIR$/Logic/Generators/GeneratorsDictionary.cs" />
-        <option value="$PROJECT_DIR$/Logic/Faker/Faker.cs" />
-        <option value="$PROJECT_DIR$/Generator.Tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass2.cs" />
         <option value="$PROJECT_DIR$/EnterPoint/main.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/GeneratorsDictionary.cs" />
+        <option value="$PROJECT_DIR$/Plugin/LoadGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/IGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/DefaultGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/StringGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/Int32Generator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/DoubleGenerator.cs" />
+        <option value="$PROJECT_DIR$/Plugin/FloatGenerator.cs" />
+        <option value="$PROJECT_DIR$/Plugin/DateTimeGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/IDictionaryGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/GeneratorsGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass3.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/StringConfigGenerator.cs" />
+        <option value="$PROJECT_DIR$/Generator/Class1.cs" />
+        <option value="$PROJECT_DIR$/Plugin/Class1.cs" />
+        <option value="$PROJECT_DIR$/../DateTimeGenerator/DateTimeGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Generators/DictionaryOfGenerators.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass1.cs" />
+        <option value="$PROJECT_DIR$/../FloatGenerator/FloatGenerator.cs" />
+        <option value="$PROJECT_DIR$/Plugin/IGenerator.cs" />
+        <option value="$PROJECT_DIR$/Logic/Faker/FakerConfig.cs" />
+        <option value="$PROJECT_DIR$/EnterPoint/Program.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass5.cs" />
+        <option value="$PROJECT_DIR$/Logic/TestClasses/TestClass4.cs" />
+        <option value="$PROJECT_DIR$/Generator.Tests/Tests.cs" />
         <option value="$PROJECT_DIR$/Logic/Generators/ValueGenerators.cs" />
+        <option value="$PROJECT_DIR$/Logic/Faker/Faker.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +162,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FloatGenerator/FloatGenerator.csproj" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -160,7 +214,13 @@
       <workItem from="1569855198290" duration="1930000" />
       <workItem from="1570001478369" duration="1231000" />
       <workItem from="1570018216015" duration="4125000" />
-      <workItem from="1570026344165" duration="1318000" />
+      <workItem from="1570026344165" duration="2125000" />
+      <workItem from="1570032492777" duration="7641000" />
+      <workItem from="1570357327561" duration="1733000" />
+      <workItem from="1571037571991" duration="57000" />
+      <workItem from="1571160362262" duration="6610000" />
+      <workItem from="1571213403605" duration="8654000" />
+      <workItem from="1571241754208" duration="8230000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1569624357687</created>
@@ -211,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570022838723</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="with generator dictionary">
+      <created>1570027680990</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570027680990</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +307,8 @@
     <MESSAGE value="with resursive List" />
     <MESSAGE value="all types working" />
     <MESSAGE value="with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="with tests" />
+    <MESSAGE value="with generator dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="with generator dictionary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

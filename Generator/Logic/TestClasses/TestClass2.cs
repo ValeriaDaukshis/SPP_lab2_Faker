@@ -6,7 +6,7 @@ namespace Generator.TestClasses
     { 
         public DateTime date;
         public string str;
-        public double doubleNumber; 
+        public double doubleNumber;
 
         public TestClass2(DateTime date, string str, double doubleNumber)
         {

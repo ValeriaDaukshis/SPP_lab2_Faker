@@ -13,5 +13,7 @@ namespace Generator.TestClasses
         public double doubleNumber;
         public char charValue;
         public byte byteNumber;
+        
+        //private TestClass1(){}
     }
 }

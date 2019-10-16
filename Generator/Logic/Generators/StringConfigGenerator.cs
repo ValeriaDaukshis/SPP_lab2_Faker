@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Text;
-using Plugin;
 
 namespace Generator.Generators
 {
-    public class StringGenerator : Plugin.IGenerator
+    public class StringConfigGenerator : Plugin.IGenerator
     {
-        public string symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        public string symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public object GenerateRandomValue()
         {
             Random random = new Random();

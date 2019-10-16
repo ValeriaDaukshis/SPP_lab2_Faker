@@ -5,10 +5,11 @@ namespace Generator.Generators
 {
     public class Int32Generator : IGenerator
     {
+        private int maxValue = Int32.MaxValue ;
         public object GenerateRandomValue()
         {
             Random rand = new Random();
-            return rand.Next(Int32.MinValue, Int32.MaxValue);
+            return rand.Next(Int32.MinValue, maxValue);
         }
     }
 }

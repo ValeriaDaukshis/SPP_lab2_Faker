@@ -39,29 +39,25 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Faker\Faker.cs" />
+        <Compile Include="Faker\FakerConfig.cs" />
         <Compile Include="Faker\IFaker.cs" />
-        <Compile Include="Generators\DefaultGenerator.cs" />
         <Compile Include="Generators\DoubleGenerator.cs" />
-        <Compile Include="Generators\GeneratorsDictionary.cs" />
-        <Compile Include="Generators\IDictionary.cs" />
+        <Compile Include="Generators\DictionaryOfGenerators.cs" />
+        <Compile Include="Generators\IDictionaryGenerator.cs" />
         <Compile Include="Generators\Int32Generator.cs" />
+        <Compile Include="Generators\StringConfigGenerator.cs" />
         <Compile Include="Generators\StringGenerator.cs" />
         <Compile Include="Generators\ValueGenerators.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="TestClasses\TestClass1.cs" />
         <Compile Include="TestClasses\TestClass2.cs" />
+        <Compile Include="TestClasses\TestClass3.cs" />
+        <Compile Include="TestClasses\TestClass4.cs" />
+        <Compile Include="TestClasses\TestClass5.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\DateTimeGenerator\DateTimeGenerator.csproj">
-        <Project>{738f2634-2a4d-4c7b-bada-1b85c807078c}</Project>
-        <Name>DateTimeGenerator</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\FloatGenerator\FloatGenerator.csproj">
-        <Project>{27dc3ae4-88e8-45c0-a72b-e6cdac76c7ff}</Project>
-        <Name>FloatGenerator</Name>
-      </ProjectReference>
       <ProjectReference Include="..\Plugin\Plugin.csproj">
-        <Project>{7c45880c-9b17-4f03-8d51-ca97587fe706}</Project>
+        <Project>{f96e21fc-92a8-4df5-805c-f1d0548a8060}</Project>
         <Name>Plugin</Name>
       </ProjectReference>
     </ItemGroup>
