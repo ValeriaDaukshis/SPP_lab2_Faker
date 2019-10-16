@@ -87,7 +87,7 @@ namespace Generator.Faker
             for (int i=0; i < info.Length; i++)
             {
                 var thisType = info[i].ParameterType;
-                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType, info[i].Name)); 
+                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType, info[i].Name), 2); 
             }
             return constructor.Invoke(values);
         }
@@ -99,7 +99,7 @@ namespace Generator.Faker
             foreach (FieldInfo info in fields)
             {
                 var thisType = info.FieldType;
-                object value = generators.Generator(thisType, GetTypeGenerator(thisType, info.Name));
+                object value = generators.Generator(thisType, GetTypeGenerator(thisType, info.Name), 2);
                 info.SetValue(obj, value); 
             }
         }
