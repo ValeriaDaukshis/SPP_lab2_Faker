@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -11,31 +12,44 @@ namespace Generator.Faker
     {
         private object _obj;
         private readonly DictionaryOfGenerators _generator;
-        HashSet<object> members = new HashSet<object>();
+        HashSet<Type> members = new HashSet<Type>();
+        private readonly Faker f;
 
         public Faker(DictionaryOfGenerators generator)
         {
             _generator = generator;
+            f = this;
         }
-        public T Create<T>() 
+
+        private object Create(Type type)
         {
-            LoadPlugins();
-            Type type = typeof(T);
+            if (members.Contains(type))
+            {
+                return null;
+            }
             ConstructorInfo constructor = GetConstructorsInfo(type);
             if (constructor == null)
             {
                 _obj = null;
-                return (T)_obj;
             }
-            if (constructor.GetParameters().Length == 0)
+            else if (constructor.GetParameters().Length == 0)
             {
                 _obj = Activator.CreateInstance(type);
-                GenerateByFields(type, _obj);
+               
+                members.Add(type);
+                _obj = GenerateByFields(type, _obj);
             }
             else
+            {
+                members.Add(type);
                 _obj = GenerateByConstructor(constructor);
-            
-            return (T)_obj;
+            }
+            return _obj;
+        }
+        public T Create<T>()
+        {
+            LoadPlugins();
+            return (T)Create(typeof(T));
         }
 
         private void LoadPlugins()
@@ -82,40 +96,62 @@ namespace Generator.Faker
         private object GenerateByConstructor(ConstructorInfo constructor)
         {
             ParameterInfo[] info = constructor.GetParameters();
-            ValueGenerators generators = new ValueGenerators();
             object[] values = new object[info.Length];
             for (int i=0; i < info.Length; i++)
             {
                 var thisType = info[i].ParameterType;
-                values[i] = generators.Generator(thisType, GetTypeGenerator(thisType, info[i].Name), 2); 
+                values[i] = GetTypeGenerator(thisType, info[i].Name); 
             }
             return constructor.Invoke(values);
         }
 
-        private void GenerateByFields(Type type, object obj)
+        private object GenerateByFields(Type type, object obj)
         {
             FieldInfo[] fields = type.GetFields();
-            ValueGenerators generators = new ValueGenerators();
             foreach (FieldInfo info in fields)
             {
                 var thisType = info.FieldType;
-                object value = generators.Generator(thisType, GetTypeGenerator(thisType, info.Name), 2);
-                info.SetValue(obj, value); 
+                object value = GetTypeGenerator(thisType, info.Name); // 5
+                info.SetValue(obj, value); //testClass5.setValue(obj4,obj5)
             }
+
+            return obj;
         }
 
-        public IGenerator GetTypeGenerator(Type type, string fieldName)
+        private object GetTypeGenerator(Type type, string fieldName)
         {
             Dictionary<Type, Tuple<string, IGenerator>> configDictionary = _generator.configDictionary;
             if (configDictionary != null && configDictionary.ContainsKey(type) )
             {
                 if(fieldName == configDictionary[type].Item1)
-                    return configDictionary[type].Item2;
+                    return configDictionary[type].Item2.GenerateRandomValue();
             }
             Dictionary<Type, IGenerator> dictionary = _generator.dictionary;
             if (dictionary.ContainsKey(type))
-                return dictionary[type];
+                return dictionary[type].GenerateRandomValue();
+            
+            if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IList<>))
+            {
+                var b = type.GetGenericArguments()[0];
+                object list = Activator.CreateInstance(typeof(List<>).MakeGenericType(b));
+
+                return Generics(list, b, new Random().Next(2, 10));
+            }
+            
+            if (type.IsClass)
+            {
+                return f.Create(type);
+            }
             return null;
+        }
+        
+        private object Generics(object list,Type b, int count)
+        {
+            if (count == 0)
+                return list;
+            --count;
+            ((IList)list).Add(f.GetTypeGenerator(b, null));
+            return Generics(list, b, count);
         }
     }
 }

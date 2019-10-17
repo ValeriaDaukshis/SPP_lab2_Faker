@@ -4,7 +4,7 @@ namespace Plugin
 {
     public interface IGenerator
     {
-//        Type SupportedType { get; }
+        //Type SupportedType { get; }
         object GenerateRandomValue();
     }
 }
